@@ -1,0 +1,27 @@
+{
+  "name": "roole-parser",
+  "version": "0.1.0",
+  "description": "Parser for the Roole language",
+  "main": "lib/index.js",
+  "directories": {
+  	"lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/curvedmark/roole-parser.git"
+  },
+  "keywords": [],
+  "author": "Glen Huang <curvedmark@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/curvedmark/roole-parser/issues"
+  },
+  "devDependencies": {
+    "mocha": "1.x",
+    "pegjs": "git://github.com/dmajda/pegjs.git#798ed6a8a4fbfc36b312ba09d428a5832808d9d6"
+  }
+}
