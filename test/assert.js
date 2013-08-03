@@ -6,5 +6,6 @@ exports.parseTo = function (str, opts, ast) {
 		ast = opts;
 		opts = null;
 	}
-	assert.deepEqual(parser.parse(str, opts), ast);
-}
+	var output = parser.parse(str, opts)
+	assert.deepEqual(output, ast);
+};
