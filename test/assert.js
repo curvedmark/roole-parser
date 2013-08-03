@@ -25,5 +25,5 @@ exports.failAt = function (str, opts, loc) {
 		assert.strictEqual(err.loc.start, loc.start, "failed at offset " + err.loc.start + " instead of " + loc.start);
 		return;
 	}
-	throw new Error('no error is thrown');
+	throw new Error('no error was thrown');
 };
