@@ -10,7 +10,7 @@ describe('roole-parser', function () {
 	});
 
 	it("should parse assignment", function () {
-		assert.parseTo('$a = 1;', { filename: 'foo' }, {
+		assert.parseTo('$a = 1;', {
 			type: 'stylesheet',
 			comments: [],
 			children: [{
@@ -24,7 +24,7 @@ describe('roole-parser', function () {
 						column: 1,
 						start: 0,
 						end: 2,
-						filename: 'foo'
+						filename: ''
 					}
 				}, {
 					type: 'number',
@@ -34,7 +34,7 @@ describe('roole-parser', function () {
 						column: 6,
 						start: 5,
 						end: 6,
-						filename: 'foo'
+						filename: ''
 					}
 				}],
 				loc: {
@@ -42,7 +42,7 @@ describe('roole-parser', function () {
 					column: 1,
 					start: 0,
 					end: 7,
-					filename: 'foo'
+					filename: ''
 				}
 			}]
 		});
