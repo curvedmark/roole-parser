@@ -47,4 +47,8 @@ describe('roole-parser', function () {
 			}]
 		});
 	});
+
+	it("should throw error for illegal statement", function () {
+		assert.failAt('$a =', { line: 1, column: 5, start: 4 });
+	});
 });
