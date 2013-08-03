@@ -20,10 +20,10 @@ exports.failAt = function (str, opts, loc) {
 		parser.parse(str, opts);
 	} catch (err) {
 		if (!err.loc) throw err;
-		assert.strictEqual(err.loc.line, loc.line, "failed at line " + err.loc.line + " instead of " + loc.line);
-		assert.strictEqual(err.loc.column, loc.column, "failed at column " + err.loc.column + " instead of " + loc.column);
-		assert.strictEqual(err.loc.start, loc.start, "failed at offset " + err.loc.start + " instead of " + loc.start);
+		assert.strictEqual(err.loc.line, loc.line, "Failed at line " + err.loc.line + " instead of " + loc.line);
+		assert.strictEqual(err.loc.column, loc.column, "Failed at column " + err.loc.column + " instead of " + loc.column);
+		assert.strictEqual(err.loc.start, loc.start, "Failed at offset " + err.loc.start + " instead of " + loc.start);
 		return;
 	}
-	throw new Error('no error was thrown');
+	throw new Error('No error was thrown');
 };
