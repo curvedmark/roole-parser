@@ -13,7 +13,7 @@ console.log(ast);
 ## API
 
 ```javascript
-parser.parse(str, options)
+parser.parse(str, [options])
 ```
 
 * `str` - string of Roole code
