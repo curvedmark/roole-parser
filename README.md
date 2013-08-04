@@ -18,4 +18,4 @@ parser.parse(str, [options])
 
 * `str` - string of Roole code
 * `options` - hash object supports the following options:
-	* `filename` - file path of the Roole code, used is debugging
+	* `filename` (default: `''`) - file path of the Roole code, used is debugging
