@@ -16,6 +16,6 @@ console.log(ast);
 parser.parse(str, [options])
 ```
 
-* `str` - string of Roole code
-* `options` - hash object supports the following options:
-	* `filename` (default: `''`) - file path of the Roole code, used is debugging
+* `str` - String of Roole code
+* `options` - Object literal supports the following options:
+	* `filename` - Absolute path of the file that contains this Roole code. If it's a path of an directory (e.g., the code comes from stdin), it should end with `/`.
