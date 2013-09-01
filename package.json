@@ -1,6 +1,6 @@
 {
   "name": "roole-parser",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Parser for the Roole language",
   "main": "lib/parser.js",
   "directories": {
