@@ -16,6 +16,6 @@ console.log(ast);
 parser.parse(str, [options])
 ```
 
-* `str` - String of Roole code
-* `options` - Object literal supports the following options:
-	* `filename` - Absolute path of the file that contains this Roole code. If it's a path of an directory (e.g., the code comes from stdin), it should end with `/`.
+* `str` - A string of Roole code
+* `options` - Object literal supports these options:
+	* `filename` (default: `""`) - Absolute path of the file that contains this Roole code
