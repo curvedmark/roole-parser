@@ -16,6 +16,7 @@ console.log(ast);
 parser.parse(str, [options])
 ```
 
-* `str` - A string of Roole code
+* `str` - A string of Roole code.
 * `options` - Object literal supports these options:
-	* `filename` (default: `""`) - Absolute path of the file that contains this Roole code
+	* `filename - An string of absolute path of the file that contains this Roole code. If specified, each AST node will contain it in the location info.
+	* `loc` (default: `true`) - A boolean denoting whether AST nodes should contain location info. If an object is passed, that object will be used directly as the location.
